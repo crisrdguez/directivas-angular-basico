@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { EntradaBlogComponent } from './entrada-blog/entrada-blog.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EntradaBlogComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
