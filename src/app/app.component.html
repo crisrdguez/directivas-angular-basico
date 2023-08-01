@@ -6,10 +6,19 @@
   Apellido:
   <input type="text" name="apellido" [(ngModel)]="apellido">
   <br><br>
+  Cargo:
+  <input type="text" name="cargo" [(ngModel)]="cargo">
+  <br><br>
+  Salario:
+  <input type="number" name="salario" [(ngModel)]="salario">
+  <br><br>
   <input type="submit" value="Registrar" (click)="registrarUsuario()">
 </form>
 <br><br>
-<p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre de {{nombre}} {{apellido}}</p> <!--Si registrado==true, me muestras el mensaje, ngIf modifica la estructura del DOM, aparece de la nada un p-->
+<p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre de {{nombre}} {{apellido}}.
+  Cargo: <span [ngStyle]="{color: cargo.toUpperCase()=='DIRECTOR' ?'red':'blue'}">{{cargo}}</span>
+  Salario:<span [ngClass]="{salarioEstilo:salario>3000}">{{salario}}</span>
+</p> <!--Si registrado==true, me muestras el mensaje, ngIf modifica la estructura del DOM, aparece de la nada un p-->
 
 <ng-template #sinRegistrar>
   <p>No hay usuarios registrados</p>

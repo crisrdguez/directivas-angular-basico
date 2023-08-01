@@ -11,6 +11,8 @@ export class AppComponent {
   nombre:string="";
   apellido:string="";
   registrado=false;
+  cargo:string="";
+  salario:number=0;
 
   //para practicar ngFor - ejemplo entradas de un blog
   entradas:Array<{titulo:string}>;
