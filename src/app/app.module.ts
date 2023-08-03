@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { EntradaBlogComponent } from './entrada-blog/entrada-blog.component';
 import { ListsModule } from './modules/lists/lists.module';
+import { ListaContactoComponent } from './components/lista-contacto/lista-contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EntradaBlogComponent
+    EntradaBlogComponent,
+    ListaContactoComponent
   ],
   imports: [
     BrowserModule,
