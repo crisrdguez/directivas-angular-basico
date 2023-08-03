@@ -1,0 +1,19 @@
+.underlined{
+    text-decoration: underline greenyellow;
+}
+
+.colorLetraRoja{
+    color:red;
+}
+
+.big{
+    font-size: xx-large;
+}
+
+.grande{
+    font-size: xx-large;
+}
+
+.peque{
+    font-size: xx-small;
+}
